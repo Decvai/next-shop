@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+* {
+	font-weight: 300;
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	color: #000;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100vh;
+
+	// Selector for the last child - 1
+	& > *:nth-last-child(2) {
+		flex-grow: 1;
+	}
+}
